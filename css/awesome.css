@@ -1,0 +1,13 @@
+html,
+body{
+     margin: 0;
+}
+
+body{
+    padding: 20px;
+    background:aliceblue;
+}
+
+.text-red {
+    color: red;
+}
