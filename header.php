@@ -15,7 +15,33 @@ else:
 endif;
 ?>
 <body <?php body_class( $awesome_classes );?>>
-   
-   <?php wp_nav_menu(array('theme_location' => 'primary'));?>
+        <div class="container">
+
+                        <div class="row">
+                          
+                                <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                               
+                                   
+                                        <a class="navbar-brand" href="#">Awesome Theme</a>
+                                   
+                                     
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                        <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                                            <?php   wp_nav_menu(array('theme_location' => 'primary',
+                                                                         'container'=> 'false',
+                                                                          'menu_class'=>'navbar-nav me-auto'
+                                                                     )
+                                                                                    );
+                                                                            ?>
+                                        </div>
+                                    
+                                </nav>
+                        
+                        </div>
+                       
+                                                          
+  <br>
    <img src="<?php header_image();?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width;?>" alt=""/>
     

@@ -1,13 +1,26 @@
-html,
-body{
-     margin: 0;
+.carousel{
+    background-color: #BEBEBE;
 }
+.carousel.item{
+    height:300px ; overflow: hidden;
+}
+.carousel.item > img{
+ width:100%;
+  height:auto; 
+  margin-top: -35%;
+}
+.carousel-caption >a{
+  color: black;
+  text-decoration: none;
+}
+.blog-element{
+    display: block; height: 200px; overflow: hidden; background-position: center center; background-repeat: no-repeat; background-size: cover;
+}
+.blog-element >a{
+    color: white;
+    text-decoration: none;
+  
+  }
 
-body{
-    padding: 20px;
-    background:aliceblue;
-}
-
-.text-red {
-    color: red;
-}
+  
+ 
